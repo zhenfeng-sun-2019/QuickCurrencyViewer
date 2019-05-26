@@ -146,7 +146,6 @@ public class MyCurrencyAPI extends AsyncTask<String, String[], String[]> {
         String[] result = new String[]{"", ""};
         switch (params[0]) {
             case API_ACTION_GET_CURRENCY_LIST:
-                Log.e("API", "requestSupportedCurrency 1");
                 result[0] = API_ACTION_GET_CURRENCY_LIST;
                 StringBuffer currencyList = sendRequest(ENDPOINT_LIST);
                 result[1] = parseSupportedCurrency(currencyList);
@@ -183,7 +182,6 @@ public class MyCurrencyAPI extends AsyncTask<String, String[], String[]> {
             case API_ACTION_GET_CURRENCY_LIST:
                 if (mCallback != null) {
                     mCallback.onSupportedCurrencyUpdated(action[1].equals(API_RESULT_OK), action[1]);
-                    Log.e("API", "requestSupportedCurrency 2" + action[1]);
                 }
                 break;
             case API_ACTION_GET_RATE_LIST:
