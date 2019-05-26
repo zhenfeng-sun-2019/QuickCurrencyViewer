@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="titanman.quickcurrencyviewer.MainScreenActivity">
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="ADD" />
+
+    <item
+        android:id="@+id/action_update"
+        android:orderInCategory="103"
+        app:showAsAction="always"
+        android:title="UPDATE" />
+
+    <item
+        android:id="@+id/action_clear"
+        android:title="CLEAR" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="ABOUT..." />
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quick Currency Viewer</string>
+    <string name="app_name_select">Select Your Currency</string>
+
+    <string name="selected_source">Source Currency</string>
+    <string name="selected_target">Target Currency</string>
+    <string name="currency_not_selected">---</string>
+
+    <string name="button_caption_add">ADD</string>
+
+    <string name="info_last_updated">"Last updated on : "</string>
+    <string name="info_next_update"> "Next update is : "</string>
+    <string name="info_updating"> "Updating..."</string>
+
+    <string name="info_update_hint"> Press \"Update\" button above to force a refresh. </string>
+    <string name="info_no_items"> "Use \"ADD\" Button to select currency pair. </string>
+
+</resources>
