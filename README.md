@@ -2,7 +2,8 @@
 
 #### About my coding style:
     The most thing I care about when I coding is the readablity of the code. 
-    Even for a reader does not have much knowledge on Java laguage, he should be able to understand the code (as the natural lauguage).
+    Even for a reader does not have much knowledge on Java laguage, 
+    he should be able to understand the code (as the natural lauguage).
 #### About the Architecture:
     I have a class diagram to explain my idea:
     ![Diagram](ClassDiagram.png)
