@@ -59,7 +59,7 @@ public class MainScreenActivity extends AppCompatActivity implements RateItemLis
         mRateList = RateItemList.getInstance(getApplicationContext());
         mRateList.setUiCallback(this);
 
-        mRateListData = mRateList.getDisplayData();
+        mRateListData = mRateList.getRateListData();
         mUpdateHandle = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -107,7 +107,7 @@ public class MainScreenActivity extends AppCompatActivity implements RateItemLis
     @Override
     public void onRateListUpdated(boolean success, String error) {
         if (success) {
-            mRateListData = mRateList.getDisplayData();
+            mRateListData = mRateList.getRateListData();
             updateRateListView();
         } else {
             mInfoText.setText(error);
@@ -168,7 +168,7 @@ public class MainScreenActivity extends AppCompatActivity implements RateItemLis
     private void updateInformation() {
         String infoString;
 
-        if (mRateList.getDisplayData().size() == 0) {
+        if (mRateList.getRateListData().size() == 0) {
             infoString = getResources().getString(R.string.info_no_items);
             mInfoText.setText(infoString);
             return;

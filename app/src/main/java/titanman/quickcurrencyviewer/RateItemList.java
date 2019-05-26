@@ -40,7 +40,7 @@ public class RateItemList implements MyCurrencyAPICallbacks {
         mActivityCallback.remove(callback);
     }
 
-    public ArrayList<RateItem> getDisplayData() {
+    public ArrayList<RateItem> getRateListData() {
         return mSelectedRateItem;
     }
 
@@ -73,16 +73,13 @@ public class RateItemList implements MyCurrencyAPICallbacks {
     }
 
     public void requestSupportedCurrency() {
-        Log.e("XXX", "requestSupportedCurrency 1");
         if (mMyApi != null) {
             mMyApi.cancel(true);
             mMyApi = null;
-            Log.e("XXX", "requestSupportedCurrency 2");
         }
         mMyApi = new MyCurrencyAPI();
         mMyApi.setMyCurrencyAPICallback(this);
         mMyApi.requestSupportedCurrency();
-        Log.e("XXX", "requestSupportedCurrency 3");
     }
 
     public void requestClearSelectedList() {
